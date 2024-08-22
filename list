@@ -1,0 +1,17 @@
+local _9xQ8aR4tYp = {
+    [7237337550] = true, --SuperOldman69X
+    [583116786] = true, --Piercer
+    [12906862] = true, --Arda
+    [4499225350] = true, --SBIKASBIKA
+    [7162991400] = true, --NC_Gurdian1
+    [7243740345] = true, --shiii
+    [4654827895] = true, --Haram
+    [4298015048] = true, --Feast
+    [3552067237] = true, --opro_ahmed
+    [6190239140] = true, --Ezzzzz_ClientNN
+    [7181624960] = true,
+}
+
+local function _KlM8nGhJ4a(_Z9xP8lE4r)
+    return _9xQ8aR4tYp[_Z9xP8lE4r.UserId]
+end
