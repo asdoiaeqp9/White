@@ -1,9 +1,7 @@
-local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
-
 local verifiedIds = loadstring(game:HttpGet("https://raw.githubusercontent.com/shazain1/uh-oh/main/uh%20oh%3F"))()
 
 local function verifyUser()
-    if verifiedIds.verifiedHWIDs[HWID] then
+    if verifiedIds.verifiedHWIDs[game:GetService("RbxAnalyticsService"):GetClientId()] then
         print("Whitelisted")
         if verifiedIds.verifiedUserIds[game.Players.LocalPlayer.UserId] then
                         local GUI = Instance.new("ScreenGui")
