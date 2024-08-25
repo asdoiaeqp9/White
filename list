@@ -5,7 +5,7 @@ local verifiedIds = loadstring(game:HttpGet("https://raw.githubusercontent.com/s
 local function verifyUser()
     if verifiedIds.verifiedHWIDs[HWID] then
         print("Whitelisted")
-        if verifiedIds.verifiedUserIds[game.Players.LocalPlayer.UserId] then
+        if verifiedIds.verifiedUserIds[game.Players.LocalPlayer.UserId] and verifiedIds.verifiedHWIDs[HWID] then
                         local GUI = Instance.new("ScreenGui")
             GUI.Parent = game.Players.LocalPlayer.PlayerGui
 
@@ -79,7 +79,7 @@ local function verifyUser()
             end
 
             createButtonLeft("WalkSpeed", function()
-                            if verifiedUserIds[game.Players.LocalPlayer.UserId] then
+                            if verifiedIds.verifiedUserIds[game.Players.LocalPlayer.UserId] and verifiedIds.verifiedHWIDs[HWID] then
 local SpeedhackGUI = Instance.new("ScreenGui")
 SpeedhackGUI.Name = "SpeedhackGUI"
 SpeedhackGUI.Parent = game.Players.LocalPlayer.PlayerGui
@@ -160,7 +160,7 @@ end)
             end)
 
             createButtonLeft("Teleport Around Target", function()
-                            if verifiedUserIds[game.Players.LocalPlayer.UserId] then
+                            if verifiedIds.verifiedUserIds[game.Players.LocalPlayer.UserId] and verifiedIds.verifiedHWIDs[HWID] then
             local character = game.Players.LocalPlayer.Character
 local humanoid = character:WaitForChild("Humanoid")
 
@@ -242,7 +242,7 @@ end)
             end)
 
             createButtonLeft("Inf Stamina", function()
-                            if verifiedUserIds[game.Players.LocalPlayer.UserId] then    
+                            if verifiedIds.verifiedUserIds[game.Players.LocalPlayer.UserId] and verifiedIds.verifiedHWIDs[HWID] then    
 
 local function disableLocalScript(scriptName)
 
@@ -271,7 +271,7 @@ disableLocalScript(scriptName)
             end)
 
             createButtonLeft("Anti FallDamage", function()
-                            if verifiedUserIds[game.Players.LocalPlayer.UserId] then    
+                            if verifiedIds.verifiedUserIds[game.Players.LocalPlayer.UserId] and verifiedIds.verifiedHWIDs[HWID] then  
                  
 local function disableLocalScript(scriptName)
     
@@ -300,7 +300,7 @@ disableLocalScript(scriptName)
             end)
 
             createButtonLeft("Kill Aura", function()
-                            if verifiedUserIds[game.Players.LocalPlayer.UserId] then    
+                            if verifiedIds.verifiedUserIds[game.Players.LocalPlayer.UserId] and verifiedIds.verifiedHWIDs[HWID] then    
 local players = game:GetService("Players")
 local myCharacter = game:GetService("Players").LocalPlayer.Character
 local nearestPlayer = nil
@@ -390,7 +390,7 @@ end)
             end)
 
             createButtonLeft("Titan Kill Aura", function()
-                            if verifiedUserIds[game.Players.LocalPlayer.UserId] then
+                            if verifiedIds.verifiedUserIds[game.Players.LocalPlayer.UserId] and verifiedIds.verifiedHWIDs[HWID] then
         local enabled = false
 local platform = nil
 local button = nil
